@@ -1,3 +1,5 @@
+using AREASYVOLUMENES.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -12,6 +14,7 @@ builder.Services.AddSwaggerGen(c =>
         Description = "API para calcular áreas y volúmenes de diferentes figuras geométricas"
     });
 });
+builder.Services.AddScoped<ICalculoService, CalculoService>();
 
 var app = builder.Build();
 
