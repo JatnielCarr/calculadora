@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "32P5CccmGDw=",
+  "dgSpecHash": "Y8AKZ4vgXx4=",
   "success": false,
   "projectFilePath": "C:\\Users\\Jatniel\\Desktop\\Nueva carpeta (2)\\calculadora\\AREASYVOLUMENES.csproj",
   "expectedPackageFiles": [
@@ -55,33 +55,61 @@
     "C:\\Users\\Jatniel\\.nuget\\packages\\system.composition.hosting\\7.0.0\\system.composition.hosting.7.0.0.nupkg.sha512",
     "C:\\Users\\Jatniel\\.nuget\\packages\\system.composition.runtime\\7.0.0\\system.composition.runtime.7.0.0.nupkg.sha512",
     "C:\\Users\\Jatniel\\.nuget\\packages\\system.composition.typedparts\\7.0.0\\system.composition.typedparts.7.0.0.nupkg.sha512",
-    "C:\\Users\\Jatniel\\.nuget\\packages\\system.diagnostics.diagnosticsource\\9.0.0\\system.diagnostics.diagnosticsource.9.0.0.nupkg.sha512",
     "C:\\Users\\Jatniel\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.0.1\\system.identitymodel.tokens.jwt.8.0.1.nupkg.sha512",
     "C:\\Users\\Jatniel\\.nuget\\packages\\system.io.pipelines\\7.0.0\\system.io.pipelines.7.0.0.nupkg.sha512",
-    "C:\\Users\\Jatniel\\.nuget\\packages\\system.io.pipelines\\9.0.0\\system.io.pipelines.9.0.0.nupkg.sha512",
     "C:\\Users\\Jatniel\\.nuget\\packages\\system.reflection.metadata\\7.0.0\\system.reflection.metadata.7.0.0.nupkg.sha512",
     "C:\\Users\\Jatniel\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "C:\\Users\\Jatniel\\.nuget\\packages\\system.text.encodings.web\\9.0.0\\system.text.encodings.web.9.0.0.nupkg.sha512",
     "C:\\Users\\Jatniel\\.nuget\\packages\\system.text.json\\9.0.0\\system.text.json.9.0.0.nupkg.sha512",
-    "C:\\Users\\Jatniel\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"
+    "C:\\Users\\Jatniel\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512",
+    "C:\\Users\\Jatniel\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Jatniel\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Jatniel\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Jatniel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.36\\microsoft.netcore.app.host.win-x64.6.0.36.nupkg.sha512"
   ],
   "logs": [
     {
       "code": "NU1202",
       "level": "Error",
-      "message": "Package Microsoft.AspNetCore.OpenApi 9.0.5 is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Package Microsoft.AspNetCore.OpenApi 9.0.5 supports: net9.0 (.NETCoreApp,Version=v9.0)",
+      "message": "Package Microsoft.AspNetCore.OpenApi 9.0.5 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Package Microsoft.AspNetCore.OpenApi 9.0.5 supports: net9.0 (.NETCoreApp,Version=v9.0)",
       "libraryId": "Microsoft.AspNetCore.OpenApi",
       "targetGraphs": [
-        "net8.0"
+        "net6.0"
       ]
     },
     {
       "code": "NU1202",
       "level": "Error",
-      "message": "Package Microsoft.AspNetCore.Authentication.JwtBearer 9.0.0 is not compatible with net8.0 (.NETCoreApp,Version=v8.0). Package Microsoft.AspNetCore.Authentication.JwtBearer 9.0.0 supports: net9.0 (.NETCoreApp,Version=v9.0)",
+      "message": "Package Microsoft.EntityFrameworkCore 9.0.0 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Package Microsoft.EntityFrameworkCore 9.0.0 supports: net8.0 (.NETCoreApp,Version=v8.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Npgsql.EntityFrameworkCore.PostgreSQL 9.0.0 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Package Npgsql.EntityFrameworkCore.PostgreSQL 9.0.0 supports: net8.0 (.NETCoreApp,Version=v8.0)",
+      "libraryId": "Npgsql.EntityFrameworkCore.PostgreSQL",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.EntityFrameworkCore.Design 9.0.0 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Package Microsoft.EntityFrameworkCore.Design 9.0.0 supports: net8.0 (.NETCoreApp,Version=v8.0)",
+      "libraryId": "Microsoft.EntityFrameworkCore.Design",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Microsoft.AspNetCore.Authentication.JwtBearer 9.0.0 is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Package Microsoft.AspNetCore.Authentication.JwtBearer 9.0.0 supports: net9.0 (.NETCoreApp,Version=v9.0)",
       "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
       "targetGraphs": [
-        "net8.0"
+        "net6.0"
       ]
     }
   ]
