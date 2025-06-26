@@ -6,6 +6,7 @@ namespace AREASYVOLUMENES.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class GeometriaController : ControllerBase
     {
         private readonly ICalculoService _calculoService;
