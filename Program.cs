@@ -1,4 +1,5 @@
 using AREASYVOLUMENES.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,15 +16,14 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 builder.Services.AddScoped<ICalculoService, CalculoService>();
+builder.Services.AddDbContext<AREASYVOLUMENES.AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
 

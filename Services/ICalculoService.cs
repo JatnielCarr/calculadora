@@ -15,5 +15,15 @@ namespace AREASYVOLUMENES.Services
         double CalculateRectangleArea(double width, double height);
         double CalculateSquareArea(double lado);
         double CalculateTriangleArea(double @base, double altura);
+
+        // Cálculos de perímetro
+        double CalcularPerimetroCuadrado(double lado);
+        double CalcularPerimetroRectangulo(double base_, double altura);
+        double CalcularPerimetroCirculo(double radio);
+
+        // Métodos para guardar resultados
+        void GuardarResultadoArea(string tipoFigura, double valor, string parametros);
+        void GuardarResultadoVolumen(string tipoFigura, double valor, string parametros);
+        void GuardarResultadoPerimetro(string tipoFigura, double valor, string parametros);
     }
 } 

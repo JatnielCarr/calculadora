@@ -65,5 +65,35 @@ namespace AREASYVOLUMENES.Controllers
             var volumen = Math.PI * radio * radio * altura;
             return Ok(new { volumen });
         }
+
+        [HttpGet("perimetro/cuadrado")]
+        public IActionResult CalcularPerimetroCuadrado(double lado)
+        {
+            if (lado <= 0)
+                return BadRequest("El lado debe ser mayor que 0");
+
+            var perimetro = 4 * lado;
+            return Ok(new { perimetro });
+        }
+
+        [HttpGet("perimetro/rectangulo")]
+        public IActionResult CalcularPerimetroRectangulo(double base_, double altura)
+        {
+            if (base_ <= 0 || altura <= 0)
+                return BadRequest("La base y la altura deben ser mayores que 0");
+
+            var perimetro = 2 * (base_ + altura);
+            return Ok(new { perimetro });
+        }
+
+        [HttpGet("perimetro/circulo")]
+        public IActionResult CalcularPerimetroCirculo(double radio)
+        {
+            if (radio <= 0)
+                return BadRequest("El radio debe ser mayor que 0");
+
+            var perimetro = 2 * Math.PI * radio;
+            return Ok(new { perimetro });
+        }
     }
 } 
