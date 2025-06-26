@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jatniel\\Desktop\\Nueva carpeta\\calculadora\\AREASYVOLUMENES.csproj": {}
+    "C:\\Users\\plant\\Volumen\\calculadora\\AREASYVOLUMENES.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jatniel\\Desktop\\Nueva carpeta\\calculadora\\AREASYVOLUMENES.csproj": {
+    "C:\\Users\\plant\\Volumen\\calculadora\\AREASYVOLUMENES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jatniel\\Desktop\\Nueva carpeta\\calculadora\\AREASYVOLUMENES.csproj",
+        "projectUniqueName": "C:\\Users\\plant\\Volumen\\calculadora\\AREASYVOLUMENES.csproj",
         "projectName": "AREASYVOLUMENES",
-        "projectPath": "C:\\Users\\Jatniel\\Desktop\\Nueva carpeta\\calculadora\\AREASYVOLUMENES.csproj",
-        "packagesPath": "C:\\Users\\Jatniel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jatniel\\Desktop\\Nueva carpeta\\calculadora\\obj\\",
+        "projectPath": "C:\\Users\\plant\\Volumen\\calculadora\\AREASYVOLUMENES.csproj",
+        "packagesPath": "C:\\Users\\plant\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\plant\\Volumen\\calculadora\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Jatniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\plant\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,12 +38,16 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[9.0.5, )"
@@ -91,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

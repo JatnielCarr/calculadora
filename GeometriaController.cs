@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
+using AREASYVOLUMENES.Services;
+using AREASYVOLUMENES.Models;
 
 namespace AREASYVOLUMENES.Controllers
 {
@@ -6,13 +8,19 @@ namespace AREASYVOLUMENES.Controllers
     [Route("api/[controller]")]
     public class GeometriaController : ControllerBase
     {
+        private readonly ICalculoService _calculoService;
+        public GeometriaController(ICalculoService calculoService)
+        {
+            _calculoService = calculoService;
+        }
+
         [HttpGet("area/cuadrado")]
         public IActionResult CalcularAreaCuadrado(double lado)
         {
             if (lado <= 0)
                 return BadRequest("El lado debe ser mayor que 0");
-
-            var area = lado * lado;
+            var area = _calculoService.CalculateSquareArea(lado);
+            _calculoService.GuardarResultadoArea("cuadrado", area, lado.ToString());
             return Ok(new { area });
         }
 
@@ -21,8 +29,8 @@ namespace AREASYVOLUMENES.Controllers
         {
             if (base_ <= 0 || altura <= 0)
                 return BadRequest("La base y la altura deben ser mayores que 0");
-
-            var area = base_ * altura;
+            var area = _calculoService.CalculateRectangleArea(base_, altura);
+            _calculoService.GuardarResultadoArea("rectangulo", area, $"{base_},{altura}");
             return Ok(new { area });
         }
 
@@ -31,8 +39,8 @@ namespace AREASYVOLUMENES.Controllers
         {
             if (radio <= 0)
                 return BadRequest("El radio debe ser mayor que 0");
-
-            var area = Math.PI * radio * radio;
+            var area = _calculoService.CalculateCircleArea(radio);
+            _calculoService.GuardarResultadoArea("circulo", area, radio.ToString());
             return Ok(new { area });
         }
 
@@ -41,8 +49,8 @@ namespace AREASYVOLUMENES.Controllers
         {
             if (lado <= 0)
                 return BadRequest("El lado debe ser mayor que 0");
-
             var volumen = lado * lado * lado;
+            _calculoService.GuardarResultadoVolumen("cubo", volumen, lado.ToString());
             return Ok(new { volumen });
         }
 
@@ -51,8 +59,8 @@ namespace AREASYVOLUMENES.Controllers
         {
             if (radio <= 0)
                 return BadRequest("El radio debe ser mayor que 0");
-
             var volumen = (4.0 / 3.0) * Math.PI * radio * radio * radio;
+            _calculoService.GuardarResultadoVolumen("esfera", volumen, radio.ToString());
             return Ok(new { volumen });
         }
 
@@ -61,8 +69,8 @@ namespace AREASYVOLUMENES.Controllers
         {
             if (radio <= 0 || altura <= 0)
                 return BadRequest("El radio y la altura deben ser mayores que 0");
-
             var volumen = Math.PI * radio * radio * altura;
+            _calculoService.GuardarResultadoVolumen("cilindro", volumen, $"{radio},{altura}");
             return Ok(new { volumen });
         }
 
@@ -71,8 +79,8 @@ namespace AREASYVOLUMENES.Controllers
         {
             if (lado <= 0)
                 return BadRequest("El lado debe ser mayor que 0");
-
-            var perimetro = 4 * lado;
+            var perimetro = _calculoService.CalcularPerimetroCuadrado(lado);
+            _calculoService.GuardarResultadoPerimetro("cuadrado", perimetro, lado.ToString());
             return Ok(new { perimetro });
         }
 
@@ -81,8 +89,8 @@ namespace AREASYVOLUMENES.Controllers
         {
             if (base_ <= 0 || altura <= 0)
                 return BadRequest("La base y la altura deben ser mayores que 0");
-
-            var perimetro = 2 * (base_ + altura);
+            var perimetro = _calculoService.CalcularPerimetroRectangulo(base_, altura);
+            _calculoService.GuardarResultadoPerimetro("rectangulo", perimetro, $"{base_},{altura}");
             return Ok(new { perimetro });
         }
 
@@ -91,8 +99,8 @@ namespace AREASYVOLUMENES.Controllers
         {
             if (radio <= 0)
                 return BadRequest("El radio debe ser mayor que 0");
-
-            var perimetro = 2 * Math.PI * radio;
+            var perimetro = _calculoService.CalcularPerimetroCirculo(radio);
+            _calculoService.GuardarResultadoPerimetro("circulo", perimetro, radio.ToString());
             return Ok(new { perimetro });
         }
     }
