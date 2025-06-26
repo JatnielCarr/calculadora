@@ -131,4 +131,9 @@ app.MapGet("/api/verify", [Authorize] (HttpContext httpContext) =>
     });
 });
 
+app.MapGet("/", context => {
+    context.Response.Redirect("/swagger");
+    return Task.CompletedTask;
+});
+
 app.Run();
