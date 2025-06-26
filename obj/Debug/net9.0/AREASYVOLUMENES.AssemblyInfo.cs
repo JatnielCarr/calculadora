@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AREASYVOLUMENES")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0e65943217d571651565f39c73f195fd5076675")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76e717eb98c0cc98128165959284efca5f50f9cc")]
 [assembly: System.Reflection.AssemblyProductAttribute("AREASYVOLUMENES")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AREASYVOLUMENES")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
