@@ -74,4 +74,15 @@ La documentación interactiva de la API está disponible en:
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles. 
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+
+## Compatibilidad de versiones .NET
+
+Este proyecto está configurado para funcionar con múltiples versiones de .NET:
+
+- **Desarrollo local:** .NET 9.0 (preview)
+- **Despliegue en Railway:** .NET 8.0
+
+Railway solo soporta hasta .NET 8.0 actualmente. Gracias al multi-targeting, puedes trabajar localmente con .NET 9.0 y desplegar sin problemas en Railway.
+
+No necesitas cambiar nada para desplegar, Railway detectará automáticamente la versión compatible. 

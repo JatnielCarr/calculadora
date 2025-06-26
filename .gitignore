@@ -1,0 +1,13 @@
+# Archivos y carpetas generados por .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+# Archivos de configuración de Rider y VSCode
+.idea/
+.vscode/
+# Archivos de sistema
+Thumbs.db
+.DS_Store 
